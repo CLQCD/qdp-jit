@@ -113,7 +113,7 @@ if( ${QDP_ENABLE_BACKEND} STREQUAL "ROCM")
   find_package(LLD REQUIRED)
   find_package(hip REQUIRED)
 
-  set(GPU_LIBS hip::amdhip64)
+  set(GPU_LIBS hip::galaxyhip)
   if( QDP_ENABLE_ROCM_STATS )
     set(QDP_USE_ROCM_STATS "1")
     find_package(amd_comgr REQUIRED)
